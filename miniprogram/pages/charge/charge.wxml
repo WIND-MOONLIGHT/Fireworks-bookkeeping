@@ -1,0 +1,99 @@
+<van-dialog id="van-dialog" />
+<!-- 弹出框 -->
+<van-notify id="van-notify" />
+<!-- <van-dialog id="van-dialog" />
+<van-notify id="van-notify" />
+<view class='qs'>
+<view class='container'style="height: 350rpx">
+  选择分类：
+  <van-dropdown-menu>
+     <van-dropdown-item value="{{ categroyIndex }}" options="{{ categroy }}" bind:change="switchValue1" />
+      <van-dropdown-item value="{{ paymentIndex }}" options="{{ payment }}" bind:change="switchValue2" />
+    </van-dropdown-menu>
+
+    <van-cell-group>
+      <van-field
+        value="{{ goodsName }}"
+        label="名称"
+        placeholder="请输入名称"
+        border="{{ false }}"
+        bind:blur="nameBlur"
+      />
+
+      <van-field
+      value="{{ goodsPrice }}"
+      label="价格"
+      border="{{ false }}"
+      placeholder="请输入价格"
+      bind:change="onChange"
+      type="digit"
+      maxlength="6"
+      />
+    </van-cell-group>
+  </view>
+  
+  <view class='btn_container' >
+    <van-button class='btn' type="default" round bind:click='post'> 保 存 </van-button>
+    <van-button class='btn' type="default" round bind:click='clear'> 清 空 </van-button>
+  </view>
+
+</view> -->
+<!-- bindsubmit="formSubmit" -->
+<form  bindreset="formReset" bindsubmit="formSubmit">
+  <view class='containere' style="height: auto">
+    <van-divider contentPosition="center">消费记账</van-divider>
+  </view>
+  <view class='container'style="height: 750rpx">
+  <!-- <view class="page-section">  -->
+    <!-- <view class="weui-cells__title">花费(￥)</view> -->
+    <!-- <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input"> -->
+        <view class="eb">
+       <!-- 金额： <input name="hf"  class="weui-input"type="digit"  value='{{form_info}}'/> -->
+       金额：<input name="hf" placeholder="00.00" value='{{form_info==null?"":form_info}}' type="digit" adjust-position="true" ></input>
+
+      </view>
+      <!-- </view> -->
+    <!-- </view>
+  </view> -->
+<!-- <view class="page-section">
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input"> -->
+        <view class="eb">
+        备注：<input name="bz" placeholder="······" class="weui-input" value='{{form_info}}' />
+        </view>
+      <!-- </view>
+    </view>
+  </view> -->
+
+    <!-- <view class="weui-cells__title">分类</view> -->
+    <!-- <view class='container' style="height: 350rpx">
+    <van-dropdown-menu>
+    <van-dropdown-item name="fl" value="{{ categroyIndex }}" options="{{ categroy }}" bind:change="bindPickerChange" />
+    <van-dropdown-item value="{{ paymentIndex }}" options="{{ payment }}" bind:change="switchValue2" />
+    </van-dropdown-menu>
+</view> -->
+      <picker name="fl" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view class="picker">
+         <view class="btn_containere"> 选择分类：{{array[index]}}</view>
+        </view>
+      </picker>
+  
+
+ 
+      <picker name="rq" mode="date" value="{{date}}"  bindchange="bindDateChange"> 
+        <view class="picker">
+      <view class="btn_containere"> 选择日期：{{date}} </view> 
+        </view>
+      </picker>
+
+  <view class="btn_container">
+    <button class="item" size="default" formType="submit" >保存</button>
+    <button class="item" form-type="reset">清空</button>
+  </view>
+
+  
+  
+
+</view>
+</form>

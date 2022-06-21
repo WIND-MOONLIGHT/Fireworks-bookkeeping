@@ -1,0 +1,94 @@
+/* pages/User/User.wxss */
+.container{
+	width: 750rpx;
+  border-radius: 0rpx;
+  background-color: #fdfd8b;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  font-size: 35rpx;
+  color: #333;
+  margin: 0rpx auto;
+  padding: 60rpx;
+  border-color: rgb(0, 0, 0);
+  border-width:2px;
+  border-style: solid;
+  border-radius: 10px 10px 10px 10px;
+
+}
+.button-row{
+  font-size: 16px;
+  font-weight: 800;
+  border-color: rgb(0, 0, 0);
+  border-width:2px;
+  border-style: solid;
+  margin-top: 5px;
+  border-radius: 10px 10px 10px 10px;
+}
+.place-holder{
+  /* width: 690rpx;
+  border-radius: 30rpx;
+  background-color: rgb(222, 233, 247);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  font-size: 35rpx;
+  color: #333;
+  margin: 30rpx auto;
+  padding: 20rpx; */
+  color: #f8f685; 
+  font-size: 28rpx;
+  word-wrap: break-word;
+}
+.container1{
+  width: 800rpx;
+  margin: 50rpx auto;
+  font-size: 35rpx;
+  /* padding: 20rpx; */
+}
+.paint1{
+
+  font-family: cursive;
+  font-size: 40rpx;
+  font-style: italic;
+  font-weight: bold;
+}
+.mytop-box{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  flex-direction:column;
+  justify-content: center;
+}
+.mytop-avatar{
+  overflow:hidden;  
+  width: 130rpx;
+  height: 130rpx; 
+  left: 50%;  
+  border-radius: 50%;  
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);  
+}
+.mytop-username{
+  font-size: 35rpx;
+  font-family: SourceHanSansCN-Medium;
+  color: #000000;
+  margin-top: 10rpx;
+}
+.font{
+font-weight: 800;
+    background-color: #fdfd8b;
+    height: 100rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-color: black;
+    border-width:2px;
+    border-style: solid;
+  /* 设置边框圆角 从左向右 */
+  /* 左上角 右上角 右下角 左下角 */
+  border-radius: 10px 10px 10px 10px;
+margin-top: 5px;
+  }
+ 

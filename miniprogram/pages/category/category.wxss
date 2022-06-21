@@ -1,0 +1,178 @@
+/* pages/category/category.wxss */
+/* .flex-item {
+  width: 50%;
+  display: inline-flex;
+  text-align: center;
+}
+.btns {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  bottom: 30rpx;
+  left: 0;
+} */
+page {
+  background-color: rgba(239, 239, 240, 1);
+}
+.line {
+
+  width: 2rpx;
+
+  height: 80%;
+
+  background-color: rgba(204, 204, 204, 1);
+
+}
+
+.head {
+
+  width: 92%;
+  border-radius: 30rpx;
+  height: 100rpx;
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+
+  top: 40rpx;
+  left:30rpx;
+  z-index: 10;
+
+}
+
+.container {
+  width: 690rpx;
+  border-radius: 30rpx;
+  background-color: #f5bbcc;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  font-size: 35rpx;
+  color: #333;
+  margin: 30rpx auto;
+  padding: 20rpx;
+  position:relative;
+  border-color: black;
+    border-width:2px;
+    border-style: solid;
+}
+.containere {
+  width: 690rpx;
+  border-radius: 30rpx;
+  background-color: #fdfd8b;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  font-size: 35rpx;
+  color: #333;
+  margin: 30rpx auto;
+  padding: 20rpx;
+  position:relative;
+  border-color: black;
+    border-width:2px;
+    border-style: solid;
+}
+.shuoying{
+  text-align: center;
+  color:#111213;
+  background:  #f5bbcc;
+  width: 680rpx;
+  background: size 10;
+  border-color: black;
+  border-width:2px;
+  border-style: solid;
+  }
+.srq{
+  text-align: left;
+  color:#a51982;
+}
+.image{
+  width: 50%;
+  height: 50%;
+  /* background-size:cover; */
+	/* border-radius: 20px; */
+}
+
+.cost{
+  font-size: 20px;
+  text-align: left;
+  color: rgb(206, 35, 35);
+  padding: absolute;
+  top: 10px;
+  left :200px;
+}
+.coste{
+  font-size: 20px;
+  text-align: right;
+}
+.view_tupian_wenzi {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px
+}
+.image {
+  width: 60px;
+  height: 60px;
+  margin:10px;
+}
+.view_wenzi2 {
+  width: 90px;
+  margin-top: 20px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  color:red;
+}
+.text_small{
+   font-size: 27rpx;
+   word-break:break-all;
+   color: #7a7878;
+   /* margin-top:40px; */
+  /* margin-left: 20px; */
+}
+/* .photo{
+  float:left;
+  width:20%;
+}
+.intro{
+  float:right;
+  width:80%;
+  position:relative;
+} */
+.btn-area {
+  margin-top: 40rpx;
+} 
+.buttone{
+  align-items: right;
+
+}
+.btn{
+  margin: auto 150rpx;
+  text-align: right;
+  float:right;
+  left: 60px;
+  bottom:20px ;
+  /* right: 0px; */
+}
+/* .page-section{
+  width: 690rpx;
+  background: rgb(116, 187, 235);
+  color: rgb(4, 18, 24);
+  /* padding:50rpx 30rpx; 
+  font-weight:100;
+  font-size:650;
+  text-align: left;
+} */
+.row{padding:50rpx 20rpx;
+     border-bottom:2px solid 
+   rgb(61, 180, 81);}
+.page {
+    width: 500rpx;
+    height: 500rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "van-dropdown-menu": "@vant/weapp/dropdown-menu",
+    "van-dropdown-item": "@vant/weapp/dropdown-item",
+    "van-cell-group":"@vant/weapp/cell-group",
+    "van-field":"@vant/weapp/field",
+    "van-dialog":"@vant/weapp/dialog",
+    "van-notify":"@vant/weapp/notify"
+    
+  }
+}

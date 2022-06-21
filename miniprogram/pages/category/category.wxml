@@ -1,0 +1,74 @@
+<!--pages/category/category.wxml-->
+<!-- <van-notice-bar left-icon="volume" speed="30" backgroundColor="#ECF9FF" text="看看你的账单，看看你的余额，你还花的下去钱吗！！！" /> -->
+<!-- <form bindsubmit="anshijian"" bindreset="formReset"> -->
+
+<!-- <van-notify id="van-notify" />
+<view class='head'>
+  
+  <picker name="rq" mode="date" value="{{date}}"  bindchange="bindDateChange">
+        <view class="picker">
+           按日查看：
+         {{date}}
+        </view>
+      </picker>
+  <view class='line'></view>
+  <picker name="rq" mode="date" value="{{date}}"  bindchange="bindDateChange">
+        <view class="picker">
+           按月查看：
+           {{date}}
+        </view>
+      </picker>
+</view> -->
+  <view class='containere' style="height: auto">
+  <!-- <view class="page-section"> -->
+      <picker name="rq" mode="date" value="{{date}}"  bindchange="bindDateChange">
+        <view class="picker">
+           选择日期：
+           {{date}}
+        </view>
+      </picker>
+  </view>
+  <view class='containere' style="height: auto">
+    <van-divider contentPosition="center">---当日总支出：{{dayprice}}---</van-divider>
+  </view>
+
+
+<!-- </view> -->
+   <view class='container' style="height: auto">
+  <van-divider contentPosition="center">账单</van-divider>
+<view  wx:for="{{dataList}}" wx:key="index">
+  <view wx:if="{{ dataList.length != 0 }}">
+  <view class="shuoying">{{index+1}}</view>
+  <view class="srq">{{item.rq}}</view>
+  <view class='view_tupian_wenzi'>
+  <block  wx:if="{{item.fl==0}}">
+    <image class="image" src="../category/img1.png" />
+  </block>
+<block  wx:if="{{item.fl==1}}">
+  <image class="image" src="../category/img3.png" mode="topleft" />
+</block>
+<block   wx:if="{{item.fl==2}}">
+  <image  class="image" src="../category/img2.png" mode="topleft"  />
+</block>
+<block  wx:if="{{item.fl==3}}">
+  <image class="image" src="../category/img4.png" mode="topleft" />
+</block>
+<block  wx:if="{{item.fl==4}}">
+  <image class="image" src="../category/img5.png" mode="topleft" />
+</block>
+  <view class="view_wenzi2">{{item.hf}}￥
+  <view class="text_small">备注:{{item.bz}}</view>
+</view>
+</view>
+  </view>
+  <!-- <view slot="footer"> -->
+    <!-- <van-button class='btn' type="mini" round bind:click='submit'> 删除 -->
+       <!-- </van-button> -->
+       <button class='btn'  float="right" type='default' size='mini' bindtap='delete' id="{{item._id}}">删除</button>
+        <!-- </view> -->
+</view>
+<view wx:if="{{ dataList.length == 0 }}">
+
+  </view>
+</view>
+

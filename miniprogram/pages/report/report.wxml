@@ -1,0 +1,101 @@
+<!--pages/report/report.wxml-->
+
+<view class='head'>
+<view class="{{head0}}"  bindtap='bindDayChange'>
+
+
+<view>
+			<view wx:if="{{month==01||month=='03'||month=='05'||month=='07'||month=='08'||month=='10'||month=='12'}}">
+			<picker name="rq" mode="selector"  value="{{dd}}"  bindchange="bindDayChange" range="{{array1}}">
+        <view class="picker">
+					七日支出：
+           {{dd}}日
+        </view>
+      </picker>
+			</view>
+			<view wx:if="{{month=='04'||month=='06'||month=='09'||month=='11'}}">
+				<picker name="rq" mode="selector"  value="{{dd}}"  bindchange="bindDayChange" range="{{array2}}">
+        <view class="picker">
+					七日支出：
+           {{dd}}日
+        </view>
+      </picker>
+			</view>
+			<view wx:if="{{year=='r'&&month=='02'}}">
+				<picker name="rq" mode="selector"  value="{{dd}}"  bindchange="bindDayChange" range="{{array3}}">
+        <view class="picker">
+					七日支出：
+           {{dd}}
+        </view>
+      </picker>
+			</view>
+			<view wx:if="{{year=='p'&&month=='02'}}">
+				<picker name="rq" mode="selector"  value="{{dd}}"  bindchange="bindDayChange" range="{{array4}}">
+        <view class="picker">
+					七日支出：
+           {{dd}}
+        </view>
+      </picker>
+			</view>
+</view>
+</view>
+
+
+	<view class="{{head1}}" >
+		<picker name="rq" mode="date" fields="month" value="{{date}}"  bindchange="bindDateChange" start="2020-12-01" end="2022-12-01">
+        <view class="picker">
+					 月份：
+					 <!-- {{DATE}} -->
+           {{date}}
+        </view>
+      </picker>
+</view>
+</view>
+
+
+
+
+     
+<view class="container">
+	<view class="title">
+	<view wx:if="{{flagpie==true}}">{{chartTitle}}</view>
+	<view wx:if="{{flagcolumn==true}}">{{chartQTtitle}}</view>
+	</view>
+	<view wx:if="{{flagpie==true}}">
+	<view  class='paint1' wx:if="{{allcost==0}}">
+		这里空空如也，这个月您还没有记账哦！快去记账吧！
+	</view>
+<view wx:else><canvas canvas-id="pieCanvas" class="canvas"></canvas></view>
+	</view>
+	<view wx:if="{{flagcolumn==true}}">
+	<canvas canvas-id="columnCanvas" class="canvas"></canvas>
+	</view>
+</view>
+
+<view class="paintZJ">
+	<view class="paint1"> 
+		<image  src="cloud://cloud1-7gko5ynq797bcfa6.636c-cloud1-7gko5ynq797bcfa6-1305669469/图表库/总价.png" style="width:30px; height:30px"></image>
+		
+		本月支出:{{allcost}}￥
+		</view>
+
+	<view class="paint1"> 
+		<image  src="../category/img1.png" style="width:30px; height:30px"></image>
+		餐饮:{{Cprice}}￥
+		</view>
+
+<view class="paint1">
+	<image  src="../category/img3.png"style="width:30px; height:30px"></image>
+	交通:{{JTPrice}}￥</view>
+<view class="paint1">
+	<image  src="../category/img2.png"style="width:30px; height:30px"></image>
+	通讯:{{TXPrice}}￥</view>
+<view class="paint1">
+	<image  src="../category/img4.png"style="width:30px; height:30px"></image>
+	购物:{{ShoppingPrice}}￥</view>
+<view class="paint1">
+	<image  src="../category/img5.png"style="width:30px; height:30px"></image>
+	其他:{{QTPrice}}￥</view>
+</view>
+
+

@@ -1,0 +1,9 @@
+<view>
+<view class='paint1' wx:if="{{time==''}}">您还没有在团子上记过任何一笔数据哦！快去团子记账吧！</view>
+<view wx:else>
+<view class="paint1">您在团子上共计了{{Number}}笔账目</view>
+<view class="paint1">共计{{allcost}}元，希望往后的日子里团子能一直陪伴您！</view>
+<view class="paint1">您在团子上记录的最早的一笔记账日期为：{{time}}</view>
+</view>
+</view>
+

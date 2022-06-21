@@ -1,0 +1,35 @@
+<!--pages/User/User.wxml-->
+<!--pages/User/User.wxml-->
+<view class="container"style="opacity:{{1}}"  >
+<!-- 头像昵称begin -->
+<view class='mytop-box'>
+      <view class="mytop-avatar">
+        <open-data  type="userAvatarUrl"></open-data><!-- 获取用户图像 -->
+      </view>
+      <view class='mytop-username'>
+        <open-data type="userNickName"></open-data><!-- 获取用户昵称 -->
+      </view>
+    </view>
+  <!-- 头像昵称end -->
+</view>
+
+
+
+
+
+
+  <view class='font' font-family='Courier New' >
+    记账总笔数{{Number}}
+  </view>
+
+
+
+
+  <view >
+                <button style="background: #fdfd8b; color: rgb(0, 0, 0); width:100%; " class="button-row" title="花火记账" id="shareBtn" open-type="share" type="primary">
+                  <view>分享花火</view>
+                </button>
+              </view>
+            
+
+

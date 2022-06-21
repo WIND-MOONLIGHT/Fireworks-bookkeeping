@@ -1,0 +1,30 @@
+.paint1{
+  
+    width: 690rpx;
+    border-radius: 30rpx;
+    background-color:#f5bbcc;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    font-size: 35rpx;
+    color: #333;
+    margin: 30rpx auto;
+    padding: 20rpx;
+  
+
+  font-family: cursive;
+  font-size: 40rpx;
+  font-style: italic;
+  font-weight: bold;
+}
+.container{
+	width: 780rpx;
+  border-radius: 0rpx;
+  background-color: #B0C4DE;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  font-size: 35rpx;
+  color: #333;
+  margin: 0rpx auto;
+  padding: 60rpx;}
